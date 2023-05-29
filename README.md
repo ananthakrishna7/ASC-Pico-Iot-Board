@@ -1,7 +1,6 @@
 # ASC Pico IoT Board
 
-A project with C code to interface the Raspberry Pi Pico with various sensors,
-done by the students of Amrita Vishwa Vidyapeetham, Coimbatore
+A GitHub Repository for the IoT end device board for the RPi Pico, developed by students from Amrita Vishwa Vidyapeetham, Coimbatore. 
 
 ![Amrita Vishwa Vidyapeetham, Coimbatore](https://upload.wikimedia.org/wikipedia/en/f/f8/Amrita-vishwa-vidyapeetham-color-logo.png)
 
@@ -14,14 +13,21 @@ The Raspberry Pi Pico is a low cost microcontroller. It uses GPIO pins to
 interface with various sensors and actuators, and can be used for embedded systems and IoT
 projects.
 
-It is a flexible platform and can be programmed in MicroPython, or using C/C++.
-Hence, it also serves as an effective learning tool
+The Raspberry Pi Pico can be programmed using the MicroPython language or the official [C/C++ SDK]([Raspberry Pi Documentation - The C/C++ SDK](https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html)) provided by the Raspberry Pi Foundation for the Pico. 
 
-The ASC Pico IoT Board addresses a few issues of the Raspbery Pi Pico:
-- Lack of 5V out
-- Lack of headers to connect jumper wires to the board
+The ASC Pico IoT Board addresses a few issues of the Raspbery Pi Pico, in the following ways:
+- 5V output pin is added for easy connection of various 5V sensors
+- Female jumper headers are soldered to make it much easier to connect sensors and jumper wires
+
+The board also has a few differences from the Pico's pinout:
+- The default UART communications (Pin 1 and 2 on the Pico) are on dedicated Rx and Tx pins.
+- The pins have a different order, and are labeled for easy identification.
+- The digital pins are on the right side of the board, and analog pins are on the left side.
 
 ## Compilation Instructions
+
+### For C/C++: 
+
 1. Install CMake, and the GCC ARM compiler. On Ubuntu, the command is as follows:
 ```bash
 sudo apt-get update
@@ -56,3 +62,9 @@ make -j4
 
 6. Load the .uf2 file and execute it on the Raspberry Pi Pico 
 (refer [Getting started with Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf), section 3.2, for information on loading the .uf2 file)
+
+
+### MicroPython:
+1. The Thonny IDE is used. [Install Thonny](https://thonny.org/).
+2. The instructions to install MicroPython firmware on the Pico are available on the [official website](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/3)
+3. Once the firmware has been installed, MicroPython code can be executed on the Raspberry Pi Pico using the Thonny IDE
