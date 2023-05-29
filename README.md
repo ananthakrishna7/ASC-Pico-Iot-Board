@@ -1,6 +1,22 @@
+# Pico Sensors
 
+A project with C code to interface the Raspberry Pi Pico with various sensors,
+done by the students of Amrita Vishwa Vidyapeetham, Coimbatore
 
-# Compilation Instructions
+![Amrita Vishwa Vidyapeetham, Coimbatore](https://upload.wikimedia.org/wikipedia/en/f/f8/Amrita-vishwa-vidyapeetham-color-logo.png)
+
+## Raspberry Pi Pico
+
+![Pinout diagram of Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/images/picow-pinout.svg)
+
+The Raspberry Pi Pico is a low cost microcontroller. It uses GPIO pins to
+interface with various sensors and actuators, and can be used for embedded systems and IoT
+projects.
+
+It is a flexible platform and can be programmed in MicroPython, or using C/C++.
+Hence, it also serves as an effective learning tool
+
+## Compilation Instructions
 1. Install CMake, and the GCC ARM compiler. On Ubuntu, the command is a follows:
 ```bash
 sudo apt-get update
@@ -9,7 +25,7 @@ sudo apt-get install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essen
 
 2. Clone the repository 
 ```bash
-git clone https://github.com/aadit-n3rdy/pico-sensors.git
+git clone https://github.com/aadit-n3rdy/pico-sensrs.git
 cd pico-sensor
 git submodule update --init --recursive
 ```
