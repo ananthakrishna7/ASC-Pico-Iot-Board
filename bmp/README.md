@@ -6,16 +6,18 @@ This example interfaces the Raspberry Pi Pico with a BMP280 temperature and pres
 sensor using the hardware I2C interface
 
 ## Components used
-- Raspberry Pi Pico
-- USB connector
-- BMP280 Sensor
+1. Raspberry Pi Pico
+1. USB connector
+1. BMP280 Sensor
 
-## Pinout
+## Connections
 
-- VCC of BMP280 -> 3.3V out of RPi Pico (pin 39)
-- GND of BMP280 -> GND of RPi Pico (pin 3)
-- SCL of BMP280 -> SDL on RPi Pico (pin 9)
-- SDA of BMP280 -> SDA on RPi Pico (pin 8)
+| BMP280 Pin | RPi Pico pin|
+| -----------|-----------------|
+| VCC | 5V |
+| GND | GND |
+| SCL | IO5/SCL |
+| SDA | IO4/SDA |
 
 ## Expected Output
 The RPi Pico sends the measured temperature and pressure via USB to the computer.

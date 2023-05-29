@@ -4,8 +4,8 @@ This example blinks the inbuilt LED
 
 ## Components used
 
-- Raspberry Pi Pico
-- USB connector
+1. Raspberry Pi Pico
+1. USB connector
 
 ## Connections
 
